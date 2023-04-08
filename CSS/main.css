@@ -186,6 +186,19 @@ li a {
 	padding-right: 10px;
 }
 
+#socials img {
+	vertical-align: middle;
+}
+
+#socials {
+	text-align: left;
+}
+
+#socials li {
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+
 .card1 {
 	border-color: #4bf2d6;
 	box-shadow:
@@ -212,7 +225,7 @@ li a {
 
 .card3 {
 	border-color: #f24150;
-		box-shadow:
+	box-shadow:
 	0 0 10px 8px #f24150,
 	0 0 2.56px 3.84px #c4333f,
 	0 0 25.6px 2.56px #91262f,
@@ -250,11 +263,11 @@ li a {
 }
 
 /*.. Modules(progInfo) page CSS */
-.semesterTitle, .titleH2 {
+.titleH2Center, .titleH2 {
 	display: inline;
 	grid-column: 1/1;
 	text-align: center;
-	margin-top: 0px;
+	margin-top: 30px;
 	background: rgba(0,0,0,0.5);
 	color: #f7f448;
 	letter-spacing: 5px;
@@ -301,7 +314,7 @@ li a {
 	}
 }
 
-.yearTitle, .titleH1 {
+.titleH1Left, .titleH1 {
 	display: inline;
 	grid-column: 1/1;
 	background: rgba(0,0,0,0.5);
@@ -421,6 +434,7 @@ li a {
 	display: grid;
 	grid-column: 1/1;
 	grid-template-columns: 100%;
+	margin-top: 30px;
 }
 
 .projCard {
@@ -507,6 +521,197 @@ li a {
 	display: none;
 }
 
+/*. Education Page CSS .*/
+.eduCard {
+	grid-column: 1/1;
+}
+
+.titleH2Green {
+	display: inline;
+	grid-column: 1/1;
+	text-align: center;
+	margin-top: 30px;
+	background: rgba(0,0,0,0.5);
+	color: #3bf541;
+	letter-spacing: 5px;
+	font-weight: 100;
+	font-family: 'Tilt Neon', cursive;
+	text-shadow:
+	.1px 0px .25px #3bf541, .2px 0px .25px #3bf541, .4px 0px .25px #3bf541,
+	
+	.1px 0px 0px #32d937, .2px 0px 0px #32d937, .4px 0px 0px #32d937,
+	.1px 0px .1px #32d937, .2px 0px .1px #32d937, .4px 0px .1px #32d937,
+	.1px 0px 2px #32d937, .2px 0px 2px #32d937, .4px 0px 2px #32d937,
+	
+	.1px 0px 1px #24a328, .2px 0px 1px #24a328, .4px 0px 5px #24a328,
+	.1px 0px 5px #24a328, .2px 0px 20px #24a328, .4px 0px 10px #24a328,
+	.1px 0px 10px #24a328, .2px 0px 30px #24a328, .4px 0px 10px #24a328;
+	box-shadow:
+	0 0 10px 8px #3bf541,
+	0 0 2.56px 3.84px #32d937,
+	0 0 25.6px 2.56px #24a328,
+	
+	inset 0 0 5px 3px #24a328,
+	inset 0 0 5px 3px #32d937,
+	inset 0 0 7px 3px #3bf541;
+	border-radius: 10px;
+	border: 1px solid #3bf541;
+	animation: myAnim 5s infinite alternate;
+}
+
+.cardGreen {
+	border-color: #3bf541;
+	box-shadow:
+	0 0 10px 8px #3bf541,
+	0 0 2.56px 3.84px #32d937,
+	0 0 25.6px 2.56px #24a328,
+	
+	inset 0 0 14px 12px #24a328,
+	inset 0 0 5px 3px #32d937,
+	inset 0 0 7px 3px #4bf2d6;
+}
+
+.cardGreen p {
+	text-align: left;
+}
+
+/*. Work Experience CSS .*/
+.workCard {
+	text-align: left;
+}
+
+.workCard ul {
+	list-style-type: "- ";
+}
+
+.workCard p {
+	font-weight: bold;
+}
+
+.workCard a {
+	text-decoration: underline;
+	display: inline;
+	padding: 5px;
+}
+
+/*. Hobbies Page CSS .*/
+.hobbyCard p {
+	text-align: left;
+}
+
+.hobbyImage {
+	padding: 30px;
+	align-self: center;
+	justify-self: center;
+}
+
+/*. Contact Page CSS .*/
+.contactCard {
+	text-align: left;
+}
+
+.contactCard p {
+	text-align: left;
+}
+
+
+::placeholder {
+	mix-blend-mode: difference;
+}
+
+.input {
+	vertical-align: text-top;
+	border-color: #4bf2d6;
+	box-shadow:
+	0 0 10px 8px #4bf2d6,
+	0 0 2.56px 3.84px #3dc4ae,
+	0 0 25.6px 2.56px #369182,
+	
+	inset 0 0 14px 12px #369182,
+	inset 0 0 5px 3px #3dc4ae,
+	inset 0 0 7px 3px #4bf2d6;
+}
+
+textarea {
+	background-color: #4bf2d6;
+}
+
+.contactCard fieldset {
+	padding-right: 200px;
+}
+
+.contactCard label {
+	padding-bottom: 5px;
+	width: 260px;
+	display: inline-block;
+}
+
+.contactCard span {
+	padding-left: 10px;
+	color: red;
+	position: absolute;
+}
+
+#submit {
+	margin-top: 10px;
+	margin-left: 5px;
+	text-align: center;
+	background-color: black;
+	border-radius: 28px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-size:17px;
+	padding:3px 10px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #2f6627;
+	box-shadow:
+	0 0 0.64px 2.56px #39ff14,
+	0 0 2.56px 3.84px #39ff14,
+	0 0 25.6px 2.56px #39ff14,
+	
+	inset 0 0 9.6px 2.56px #39ff14,
+	inset 0 0 2.56px 1.28px #39ff14,
+	inset 0 0 3.2px 1.28px #39ff14;
+}
+#submit:hover {
+	background-color: grey;
+}
+#submit:active {
+	position:relative;
+	top:1px;
+}
+
+#cancel {
+	float: right;
+	margin-top: 10px;
+	text-align: center;
+	background-color: black;
+	border-radius:28px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-size:17px;
+	padding:0px 10px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #2f6627;
+	box-shadow:
+	0 0 0.64px 2.56px #f24150,
+	0 0 2.56px 3.84px #f24150,
+	0 0 25.6px 2.56px #f24150,
+	
+	inset 0 0 9.6px 2.56px #f24150,
+	inset 0 0 2.56px 1.28px #f24150,
+	inset 0 0 3.2px 1.28px #f24150;
+}
+#cancel:hover {
+	background-color: grey;
+}
+#cancel:active {
+	position:relative;
+	top:1px;
+}
+
 /*. Footer CSS */
 .footer {
 	margin-top: 20px;
@@ -552,11 +757,12 @@ li a {
 		grid-column: span 4;
 	}
 	
-	.semesterTitle {
+	/*. progInfo CSS .*/
+	.titleH2Center {
 		grid-column: 4/10;
 	}
 	
-	.yearTitle {
+	.titleH1Left {
 		grid-column: 1/13;
 		justify-self: left;
 		padding: 0 30px 0 30px;
@@ -569,8 +775,10 @@ li a {
 	}	
 	
 	.titleH2 {
+		padding: 0 20px 0 20px;
 		margin-top: 30px;
-		grid-column: 4/10;
+		justify-self: left;
+		grid-column: 1/13;
 	}
 	
 	#card112, #card113, #card122, #card123 {display: block;}
@@ -583,6 +791,7 @@ li a {
 	
 	.TBA { grid-column: 1/13;}
 	
+	/*. Project CSS .*/
 	#proj2 > * {
 		display: block;
 	}
@@ -605,6 +814,51 @@ li a {
 	.projLink {
 		grid-column: span 6;
 		grid-row: auto;
+	}
+	
+	/*. Education CSS .*/
+	.eduCard {
+		grid-column: span 3;
+	}
+	
+	.titleH2Green {
+		padding: 0 20px 0 20px;
+		justify-self: left;
+		grid-column: 1/13;
+	}
+	
+	.titleH3 {
+		justify-self: center;
+	}
+	
+	.cardGreen {
+		grid-column: 1/13;
+	}
+	
+	.cardGreen img { 	
+		float: right;
+		padding-left: 10px;
+	}
+	
+	/*. Work Experience CSS .*/
+	.workCard {
+		grid-column: 1/13;
+		justify-self: center;
+	}
+	
+	/*. Hobbies CSS .*/
+	.hobbyCard {
+		grid-column: span 6;
+	}
+	
+	.hobbyImage {
+		grid-column: span 6;
+	}
+	
+	/*. Contact CSS .*/
+	.contactCard {
+		grid-column: 1/13;
+		justify-self: center;
 	}
 }
 /* Hamburger Icon, Project Button */
